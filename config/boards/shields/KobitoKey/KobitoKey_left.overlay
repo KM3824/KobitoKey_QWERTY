@@ -89,6 +89,15 @@
     input-processors =
         <&sensor_rotation_right>,
         <&zip_temp_layer 3 300000>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
+
+    scroller_right {
+        layers = <4>;
+
+        input-processors =
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
+    };
 };
 
 &zip_temp_layer {
