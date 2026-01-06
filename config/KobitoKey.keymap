@@ -45,6 +45,11 @@
             key-positions = <1 2>;
             bindings = <&kp GRAVE>;
         };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
     };
 
     mo2: mo2 {
@@ -177,10 +182,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp L     &kp U                 &kp MINUS            &kp DEL           &kp F        &kp W        &kp R  &kp Y         &kp P
-&kp E    &kp I     &kp A                 &kp O                &kp COMMA         &kp K        &kp T        &kp N  &kp S         &lt 3 H
-&kp Z    &kp X     &kp C                 &kp V                &kp PERIOD        &kp G        &kp D        &kp M  &kp J         &kp B
-&kp TAB  &kp LALT  &mt LCTRL LANGUAGE_2  &mt LSHFT BACKSPACE  &lt 1 LANGUAGE_1  &lt 4 SPACE  &lt 1 ENTER  &mo 4  &kp LEFT_WIN  &kp ESCAPE
+&kp Q    &kp L     &kp U                 &kp MINUS            &kp DEL           &lt 4 F      &kp W        &kp R              &kp Y         &kp P
+&kp E    &kp I     &kp A                 &kp O                &kp COMMA         &kp K        &kp T        &kp N              &kp S         &lt 3 H
+&kp Z    &kp X     &kp C                 &kp V                &kp PERIOD        &kp G        &kp D        &kp M              &kp J         &kp B
+&kp TAB  &kp LALT  &mt LCTRL LANGUAGE_2  &mt LSHFT BACKSPACE  &lt 1 LANGUAGE_1  &lt 4 SPACE  &lt 1 ENTER  &kp RIGHT_CONTROL  &kp LEFT_WIN  &kp ESCAPE
             >;
         };
 
@@ -207,7 +212,7 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans       &kp F7  &kp F8  &kp F9  &kp F10  &kp RS(TAB)         &mkp MB3             &mkp MB1  &mkp MB2  &trans
+&trans       &kp F7  &kp F8  &kp F9  &kp F10  &kp RS(TAB)         &kp RS(TAB)          &mkp MB1  &mkp MB2  &trans
 &trans       &kp F4  &kp F5  &kp F6  &trans   &kp RA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans    &trans    &trans
 &trans       &trans  &kp F2  &kp F3  &trans   &trans              &trans               &trans    &trans    &trans
 &bootloader  &trans  &trans  &trans  &trans   &trans              &trans               &trans    &trans    &bootloader
