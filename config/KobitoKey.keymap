@@ -212,19 +212,19 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans       &kp F7  &kp F8  &kp F9  &kp F10  &kp RS(TAB)         &kp RS(TAB)          &mkp MB1  &mkp MB2  &trans
-&trans       &kp F4  &kp F5  &kp F6  &trans   &kp RA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans    &trans    &trans
-&trans       &trans  &kp F2  &kp F3  &trans   &trans              &trans               &trans    &trans    &trans
-&bootloader  &trans  &trans  &trans  &trans   &trans              &trans               &trans    &trans    &bootloader
+&trans       &kp F7         &kp F8  &kp F9  &kp F10  &kp RA(TAB)         &kp RA(TAB)          &mkp MB1  &mkp MB2  &trans
+&trans       &kp F4         &kp F5  &kp F6  &trans   &kp RA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans    &trans    &trans
+&trans       &trans         &kp F2  &kp F3  &trans   &trans              &trans               &trans    &trans    &trans
+&bootloader  &kp LS(LG(S))  &trans  &trans  &trans   &trans              &trans               &trans    &trans    &bootloader
             >;
         };
 
         layer_4 {
             bindings = <
-&kp BACKSPACE     &kp LS(NUMBER_1)   &kp SLASH             &kp LS(SLASH)     &moC           &kp TAB     &mo7          &mo8    &mo9          &kp BACKSPACE
+&kp BACKSPACE     &kp LS(NUMBER_1)   &kp SLASH             &kp LS(SLASH)     &moC           &kp TAB     &mo7          &mo8    &mo9          &mt RIGHT_CONTROL BACKSPACE
 &kp LS(NUMBER_6)  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp MINUS      &kp PERIOD  &kp NUMBER_4  &kp N5  &mo6          &moI
 &kp LS(N5)        &kp ASTRK          &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp SEMICOLON  &kp COMMA   &kp NUMBER_1  &mo2    &kp NUMBER_3  &kp N0
-&trans            &trans             &trans                &trans            &trans         &trans      &trans        &trans  &trans        &kp LG(LS(S))
+&trans            &trans             &trans                &trans            &trans         &trans      &trans        &trans  &trans        &trans
             >;
         };
     };
